@@ -1,4 +1,7 @@
 .barra1{
     background-color: green;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+  
 }

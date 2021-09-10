@@ -30,11 +30,18 @@ contador();
 function mostraResultados() {
     for (let i = 0; i <= 12; i++) {
         const c = document.createElement('div')
+
+        const p = document.createElement('span')
+
         c.classList.add('barra1')
         c.innerText = armazernar[i];
         c.style.width = `${armazernar[i]}px`
-       
         barra1.appendChild(c);
+
+
+        if(armazernar[i] === 0){
+            c.style.display = 'none';
+        }
     }
 };
 
